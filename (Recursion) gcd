@@ -1,3 +1,5 @@
+// Find the greatest common divisor (gcd) of two positive number
+
 var gcd = function(a, b) {
   if (!b) {
     return a;
