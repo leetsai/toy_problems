@@ -1,0 +1,8 @@
+// Compute the sum of an array of integers
+
+var sumArray = function(arr) {
+  if (arr.length === 1) {
+  	return arr[0];
+  }
+  return sumArray(arr.slice(0, arr.length - 1)) + arr.pop();
+};
