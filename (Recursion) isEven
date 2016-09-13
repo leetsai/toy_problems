@@ -3,10 +3,10 @@
 var isEven = function(n) {
   var naturalN = Math.abs(n);
   if (naturalN === 0) {
-  	return true;
+    return true;
   } else if (naturalN === 1 || naturalN === -1) {
-  	return false;
+    return false;
   } else {
-  	return isEven(naturalN - 2);
+    return isEven(naturalN - 2);
   }
 };
