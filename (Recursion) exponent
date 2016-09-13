@@ -1,3 +1,5 @@
+// Compute the exponent of a number
+
 var exponent = function(a, b) {
 	if (b === 0) {
 		return 1;
