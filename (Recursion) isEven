@@ -1,0 +1,12 @@
+// Check whether a number is even or not
+
+var isEven = function(n) {
+  var naturalN = Math.abs(n);
+  if (naturalN === 0) {
+  	return true;
+  } else if (naturalN === 1 || naturalN === -1) {
+  	return false;
+  } else {
+  	return isEven(naturalN - 2);
+  }
+};
