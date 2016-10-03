@@ -1,3 +1,4 @@
+// Memoize
 var fibonacci = function(n) {
   var memo = {1: 1, 2: 1};
 
@@ -14,3 +15,21 @@ var fibonacci = function(n) {
 };
 
 fibonacci(10);
+
+// Bottom-up
+var fibonacci = function(n) {
+  if(n === 0) {
+    return 0;
+  }
+  
+  var a = 0;
+  var b = 1;
+  
+  for(var i = 2; i < n; i++) {
+    var c = a + b;
+    a = b;
+    b = c;
+  }
+  
+  return a + b;
+};
