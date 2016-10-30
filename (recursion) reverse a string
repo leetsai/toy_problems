@@ -1,0 +1,5 @@
+var reverseString = function(string) {
+  return (string === "") ? "" : reverseString(string.substr(1)) + string.charAt(0);
+};
+
+reverseString("hello"); // olleh
