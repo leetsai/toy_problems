@@ -1,15 +1,15 @@
-// Represent a number 'N' in binary
+// Represent a number in any base
 
-function getBinary(N) {
-  var binary = "";
-  var divideThis = 2;
-  while (N !== 0) {
-    var remainder = N % divideThis;
-    binary += remainder;
-    N = Math.floor(N / divideThis);
+function getBase(number, base) {
+  var newN = "";
+  while (number !== 0) {
+    var remainder = number % base;
+    newN += remainder;
+    number = Math.floor(number / base);
   }
-  return binary.split("").reverse().join("");
+  return newN.split("").reverse().join("");
 }
 
-getBinary(10); // 1010
-getBinary(33); // 100001
+getBase(10, 2); // 1010
+getBase(11, 8); // 13
+getBase(33, 11); // 30
