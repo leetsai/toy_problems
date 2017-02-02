@@ -46,3 +46,5 @@ var helper = function(level, row, column, matrix, result) {
     helper (level + 1, row - 2, column - 2, matrix, result);
   }
 };
+
+printSpiral([[1,2,3],[4,5,6],[7,8,9]]); // [1,2,3,6,9,8,7,4,5]
